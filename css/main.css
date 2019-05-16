@@ -30,7 +30,7 @@ p{
   display: block;
   margin-bottom: -5px;
   position: relative;
-  background-image: url("../images/1.jpg");
+  background-color: #202020;
   -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -143,4 +143,30 @@ p{
 #myBtn:hover {
   background: #ddd;
   color: black;
+}
+
+.mobile{
+  width: 100%;
+  background-color: black;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 1050px) {
+  .desktop{
+    display: inline-block;
+  }
+  .mobile{
+    display: none;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: inline-block;
+  }
 }
